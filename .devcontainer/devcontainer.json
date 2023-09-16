@@ -1,0 +1,37 @@
+{
+	"image": "mcr.microsoft.com/devcontainers/base:bullseye",
+
+	"features": {
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {
+			"version": "20.10",
+			"enableNonRootDocker": "true",
+			"moby": "false"
+		},
+		"ghcr.io/devcontainers/features/github-cli:1": {},
+		"ghcr.io/shyim/devcontainers-features/bun:0": {}
+	},
+	
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"svelte.svelte-vscode",
+				"ardenivanov.svelte-intellisense",
+			],
+			"settings": {
+				"files.autoSave": "off",
+			}
+		}
+	},
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "dockcer --version",
+
+	// Configure tool-specific properties.
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+}
+
